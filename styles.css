@@ -1,17 +1,38 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
 
 :root {
-  --text-color-light: #64748b;
-  --text-color-default: #1e293b;
-  --text-color-dark: #0f172a;
+  --gray-50: #f8fafc;
+  --gray-100: #f1f5f9;
+  --gray-200: #e2e8f0;
+  --gray-300: #cbd5e1;
+  --gray-400: #94a3b8;
+  --gray-500: #64748b;
+  --gray-600: #475569;
+  --gray-700: #334155;
+  --gray-800: #1e293b;
+  --gray-900: #0f172a;
 
-  --gray-light: #f1f5f9;
-  --gray-default: #e2e8f0;
-  --gray-dark: #334155;
+  --teal-50: #f0fdfa;
+  --teal-100: #ccfbf1;
+  --teal-200: #99f6e4;
+  --teal-300: #5eead4;
+  --teal-400: #2dd4bf;
+  --teal-500: #14b8a6;
+  --teal-600: #0d9488;
+  --teal-700: #0f766e;
+  --teal-800: #115e59;
+  --teal-900: #134e4a;
 
-  --primary-teal-light: #f0fdfa;
-  --primary-teal-default: #2dd4bf;
-  --primary-teal-dark: #115e59;
+  --cyan-50: #ecfeff;
+  --cyan-100: #cffafe;
+  --cyan-200: #a5f3fc;
+  --cyan-300: #67e8f9;
+  --cyan-400: #22d3ee;
+  --cyan-500: #06b6d4;
+  --cyan-600: #0891b2;
+  --cyan-700: #0e7490;
+  --cyan-800: #155e75;
+  --cyan-900: #164e63;
 }
 
 * {
@@ -20,8 +41,8 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  color: var(--text-color-default);
-  background-color: var(--gray-light);
+  color: var(--gray-900);
+  background-color: var(--gray-100);
   margin: 0;
 }
 
@@ -42,12 +63,13 @@ a {
   padding: 2em 1.5em;
 }
 
-h2 {
-  color: var(--text-color-default);
+section h2 {
+  font-size: 1.8em;
+  color: var(--gray-700);
 }
 
 .site-header {
-  background-color: var(--primary-teal-dark);
+  background-color: var(--teal-900);
   width: 100%;
 }
 
@@ -67,7 +89,7 @@ h2 {
 }
 
 .site-header a {
-  color: var(--gray-light);
+  color: var(--gray-50);
   padding: 1em 2em;
 }
 
@@ -76,8 +98,8 @@ h2 {
 }
 
 .hero {
-  background-color: var(--primary-teal-dark);
-  color: var(--gray-light);
+  background-color: var(--teal-900);
+  color: var(--gray-50);
 }
 
 .hero .section-content {
@@ -120,8 +142,8 @@ h2 {
 }
 .hero__links svg {
   width: 2em;
-  fill: var(--gray-light);
-  color: var(--gray-light);
+  fill: var(--teal-50);
+  color: var(--teal-50);
 }
 
 .hero__links svg:hover {
@@ -137,13 +159,13 @@ h2 {
 }
 
 .project {
-  background-color: var(--gray-default);
+  background-color: var(--gray-200);
   padding: 1em;
   border-radius: 20px;
 }
 
 .project__img {
-  background: var(--gray-dark);
+  background: var(--gray-300);
   border-radius: 10px;
 }
 .project:hover .project__img a {
@@ -153,7 +175,6 @@ h2 {
 .project__img a {
   border-radius: 10px;
   height: 15em;
-  background-color: rgba(0, 0, 0, 0.5);
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -165,19 +186,21 @@ h2 {
 }
 
 .project h3 {
-  color: var(--text-color-dark);
+  color: var(--teal-700);
   font-weight: 600;
-  font-size: 1.3em;
+  font-size: 1.4em;
+  margin-bottom: 0.3em;
 }
 
 .project__stack span {
   display: inline-block;
   font-size: 0.9em;
-  color: var(--gray-dark);
+  color: var(--gray-700);
   text-transform: uppercase;
   padding: 0.15em 0.4em;
   border-radius: 5px;
-  border: 1px solid var(--gray-dark);
+  background-color: var(--gray-100);
+  border: 1px solid var(--gray-300);
   margin-right: 0.2em;
 }
 
@@ -190,16 +213,20 @@ h2 {
 .project__links a {
   width: 50%;
   text-align: center;
-  background-color: var(--gray-light);
-  color: var(--gray-dark);
+  background-color: var(--gray-100);
+  color: var(--cyan-800);
   padding: 0.8em 0;
   border-radius: 10px;
   font-weight: 600;
+  transition: 0.3s ease-out;
+  box-shadow: 0 0 0 var(--gray-300);
 }
 
 .project__links a:hover {
-  background-color: var(--primary-teal-light);
-  color: var(--primary-teal-dark);
+  background-color: var(--cyan-100);
+  color: var(--cyan-700);
+  transform: translate(-10px, -10px);
+  box-shadow: 10px 10px 0 var(--gray-300);
 }
 
 @media (max-width: 650px) {
