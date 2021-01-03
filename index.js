@@ -1,6 +1,6 @@
 import projects from './projects.js'
 
-const projectsDiv = document.getElementById('projects')
+const projectsDiv = document.getElementById('projects-list')
 
 let html = ""
 
@@ -18,10 +18,10 @@ projects.forEach(project => {
             </div>
             <div class="project__info">
                 <h3>${project.name}</h3>
-                <p class="project__description">${project.description}</p>
                 <div class="project__stack">
-                    ${stack}
+                ${stack}
                 </div>
+                <p class="project__description">${project.description}</p>
                 <div class="project__links">
                     <a href="${project.demo && project.demo}">Demo</a>
                     <a href="${project.repo && project.repo}">Code</a>
