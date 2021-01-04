@@ -39,6 +39,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   color: var(--gray-900);
@@ -95,6 +99,7 @@ section h2 {
 
 .site-header a:hover {
   color: white;
+  opacity: 0.8;
 }
 
 .hero {
@@ -142,13 +147,15 @@ section h2 {
 }
 .hero__links svg {
   width: 2em;
-  fill: var(--teal-50);
-  color: var(--teal-50);
+  fill: var(--gray-50);
+  color: var(--gray-50);
+  transition: transform 0.2s linear;
 }
 
 .hero__links svg:hover {
   fill: white;
   color: white;
+  transform: translateY(-5px);
 }
 
 #projects-list {
