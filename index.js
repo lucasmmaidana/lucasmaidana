@@ -23,8 +23,8 @@ projects.forEach(project => {
                 </div>
                 <p class="project__description">${project.description}</p>
                 <div class="project__links">
-                    <a href="${project.demo && project.demo}">Demo</a>
-                    <a href="${project.repo && project.repo}">Code</a>
+                    ${project.demo ? `<a href="${project.demo}">Demo</a>` : "" }
+                    ${project.repo ? `<a href="${project.repo}">Code</a>` : "" }
                 </div>
             </div>
         </div>
