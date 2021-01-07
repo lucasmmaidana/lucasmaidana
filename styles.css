@@ -97,6 +97,7 @@ section h2 {
 
 .site-header a {
   color: var(--gray-50);
+  font-weight: 400;
   padding: 1em 2em;
 }
 
@@ -191,6 +192,20 @@ section h2 {
   fill: white;
   color: white;
   transform: translateY(-5px);
+}
+
+#aboutme {
+  padding: 10vh 0;
+}
+#aboutme p {
+  font-size: 1.5em;
+  text-align: center;
+  line-height: 1.7em;
+  color: var(--teal-900);
+}
+#aboutme p strong {
+  font-weight: 600;
+  color: var(--teal-800);
 }
 
 #projects-list {
