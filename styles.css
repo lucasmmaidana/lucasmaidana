@@ -216,9 +216,10 @@ section h2 {
 }
 
 .project {
-  background-color: var(--gray-200);
+  background-color: white;
   padding: 1em;
   border-radius: 20px;
+  box-shadow: 0 5px 3px var(--gray-200), 0 15px 15px var(--gray-200);
 }
 
 .project__img {
@@ -245,20 +246,22 @@ section h2 {
 .project h3 {
   color: var(--teal-700);
   font-weight: 600;
-  font-size: 1.4em;
-  margin-bottom: 0.3em;
+  font-size: 1.5em;
+  margin-bottom: 0.4em;
 }
 
 .project__stack span {
   display: inline-block;
   font-size: 0.9em;
-  color: var(--gray-700);
+  vertical-align: middle;
+  line-height: 1.5rem;
+  color: var(--teal-50);
   text-transform: uppercase;
-  padding: 0.15em 0.4em;
-  border-radius: 5px;
-  background-color: var(--gray-100);
-  border: 1px solid var(--gray-300);
+  padding: 0 0.6em;
+  border-radius: 1em;
+  background-color: var(--teal-600);
   margin-right: 0.2em;
+  font-weight: 600;
 }
 
 .project__links {

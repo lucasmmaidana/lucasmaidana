@@ -7,7 +7,7 @@ const projects = [
     demo: "https://picstore.netlify.app/",
     stack: ["React", "CSS"],
     description:
-      "React app from the 'Advance React' Scrimba.com course.\n Context, Hooks, PropTypes, Custom Hooks.",
+      "React app from the 'Advance React' Scrimba.com course.\n Context, Hooks, Router, PropTypes, Custom Hooks.",
   },
   {
     name: "Guess the song",
