@@ -70,10 +70,10 @@ const projects = [
     name: "Fantasmas",
     img:
       "https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fd7a30fbe-6736-477d-98a7-41143611e5e8%2FCaptura_de_pantalla_2020-08-04_-_12.24.41.png?table=block&id=de334ce9-076b-43ae-a4aa-e8c248caa00b&width=2790&userId=4bb9f704-7013-46e4-a417-bae0aa696d45&cache=v2",
-    repo: null,
+    repo: "view-source:https://jumpers-game.blogspot.com/",
     demo: "https://jumpers-game.blogspot.com/",
-    stack: ["HTML", "CSS", "JavaScript"],
-    description: "HTML5 game with CSS animations.",
+    stack: ["HTML", "CSS", "jQuery"],
+    description: "Game with CSS animations.",
   },
 ]
 
