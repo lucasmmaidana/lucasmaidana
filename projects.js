@@ -14,10 +14,9 @@ const projects = [
     img:
       "https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F45721836-cd86-4f38-9310-a2f4de8f1248%2Fbehance_cover_Taylor_swift_guess_the_song.png?table=block&id=5470237a-0e48-4b53-8d08-c7e1caaaacf4&width=3490&userId=4bb9f704-7013-46e4-a417-bae0aa696d45&cache=v2",
     repo: "https://github.com/lucasmmaidana/taylor-guess-the-song",
-    demo:
-      "https://www.figma.com/proto/F36sSIDponxiFMix3ALfK2/Guess-the-Song-Taylor-Swift?node-id=1%3A3&scaling=min-zoom",
+    demo: "https://guessthesongtaylorswift.netlify.app/",
     stack: ["React", "SCSS", "Figma"],
-    description: "Project in progress. Quizz game in ReactJS.",
+    description: "Quizz game in ReactJS.\nHooks, Context, public APIs.",
   },
   {
     name: "Tienda Split",
