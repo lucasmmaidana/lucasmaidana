@@ -1,13 +1,11 @@
 const projects = [
   {
-    name: "PicStore",
-    img:
-      "https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F49e47670-855e-4e5b-baf2-7b76e8c6703f%2Fpicstore.netlify.react_app_.png?table=block&id=4aa90eee-ea9b-4ddb-88e4-50471fd2b46f&width=3490&userId=4bb9f704-7013-46e4-a417-bae0aa696d45&cache=v2",
-    repo: "https://github.com/lucasmmaidana/picstore-react-app",
-    demo: "https://picstore.netlify.app/",
-    stack: ["React", "CSS"],
-    description:
-      "React app from the 'Advance React' Scrimba.com course.\n Context, Hooks, Router, PropTypes, Custom Hooks.",
+    name: "Supermarket list",
+    img: "./img/tradehelm-challenge.png",
+    repo: "https://github.com/lucasmmaidana/tradehelm-challenge",
+    demo: "https://tradehelm-challenge-zeta.vercel.app/",
+    stack: ["React", "TypeScript", "CSS modules"],
+    description: "App that saves a list of items in localStorage.",
   },
   {
     name: "Guess the song",
@@ -17,6 +15,16 @@ const projects = [
     demo: "https://guessthesongtaylorswift.netlify.app/",
     stack: ["React", "SCSS", "PWA", "Figma"],
     description: "Quizz game in ReactJS.\nHooks, Context, public APIs.",
+  },
+  {
+    name: "PicStore",
+    img:
+      "https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F49e47670-855e-4e5b-baf2-7b76e8c6703f%2Fpicstore.netlify.react_app_.png?table=block&id=4aa90eee-ea9b-4ddb-88e4-50471fd2b46f&width=3490&userId=4bb9f704-7013-46e4-a417-bae0aa696d45&cache=v2",
+    repo: "https://github.com/lucasmmaidana/picstore-react-app",
+    demo: "https://picstore.netlify.app/",
+    stack: ["React", "CSS"],
+    description:
+      "React app from the 'Advance React' Scrimba.com course.\n Context, Hooks, Router, PropTypes, Custom Hooks.",
   },
   {
     name: "Tienda Split",
