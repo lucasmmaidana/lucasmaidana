@@ -1,5 +1,14 @@
 const projects = [
   {
+    name: "Nextbnb",
+    img: "./img/nextbnb.png",
+    repo: "https://github.com/lucasmmaidana/nextbnb",
+    demo: "",
+    stack: ["Next.js", "MongoDB", "Sass"],
+    description:
+      "Listing of properties from a database in a static generated site.",
+  },
+  {
     name: "Supermarket list",
     img: "./img/tradehelm-challenge.png",
     repo: "https://github.com/lucasmmaidana/tradehelm-challenge",
@@ -13,7 +22,7 @@ const projects = [
       "https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F45721836-cd86-4f38-9310-a2f4de8f1248%2Fbehance_cover_Taylor_swift_guess_the_song.png?table=block&id=5470237a-0e48-4b53-8d08-c7e1caaaacf4&width=3490&userId=4bb9f704-7013-46e4-a417-bae0aa696d45&cache=v2",
     repo: "https://github.com/lucasmmaidana/taylor-guess-the-song",
     demo: "https://guessthesongtaylorswift.netlify.app/",
-    stack: ["React", "SCSS", "PWA", "Figma"],
+    stack: ["React", "SCSS", "Figma"],
     description: "Quizz game in ReactJS.\nHooks, Context, public APIs.",
   },
   {
