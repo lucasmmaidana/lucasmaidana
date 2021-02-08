@@ -3,7 +3,7 @@ const projects = [
     name: "Nextbnb",
     img: "./img/nextbnb.png",
     repo: "https://github.com/lucasmmaidana/nextbnb",
-    demo: "",
+    demo: "https://nextbnb-pi.vercel.app/",
     stack: ["Next.js", "MongoDB", "Sass"],
     description:
       "Listing of properties from a database in a static generated site.",
