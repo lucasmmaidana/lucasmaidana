@@ -6,7 +6,18 @@ const projects = [
     demo: "https://nextbnb-pi.vercel.app/",
     stack: ["Next.js", "MongoDB", "Sass"],
     description:
-      "Listing of properties from a database in a static generated site.",
+      "Listing of properties from a MongoDB Atlas example database in a static generated site.",
+  },
+
+  {
+    name: "Guess the song",
+    img:
+      "https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F45721836-cd86-4f38-9310-a2f4de8f1248%2Fbehance_cover_Taylor_swift_guess_the_song.png?table=block&id=5470237a-0e48-4b53-8d08-c7e1caaaacf4&width=3490&userId=4bb9f704-7013-46e4-a417-bae0aa696d45&cache=v2",
+    repo: "https://github.com/lucasmmaidana/taylor-guess-the-song",
+    demo: "https://guessthesongtaylorswift.netlify.app/",
+    stack: ["React", "SCSS", "Figma"],
+    description:
+      "Quizz game in ReactJS.\nHooks, Context, public APIs and CSS animations.\nDesign and prototyping in Figma.",
   },
   {
     name: "Supermarket list",
@@ -15,15 +26,6 @@ const projects = [
     demo: "https://tradehelm-challenge-zeta.vercel.app/",
     stack: ["React", "TypeScript", "CSS modules"],
     description: "App that saves a list of items in localStorage.",
-  },
-  {
-    name: "Guess the song",
-    img:
-      "https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F45721836-cd86-4f38-9310-a2f4de8f1248%2Fbehance_cover_Taylor_swift_guess_the_song.png?table=block&id=5470237a-0e48-4b53-8d08-c7e1caaaacf4&width=3490&userId=4bb9f704-7013-46e4-a417-bae0aa696d45&cache=v2",
-    repo: "https://github.com/lucasmmaidana/taylor-guess-the-song",
-    demo: "https://guessthesongtaylorswift.netlify.app/",
-    stack: ["React", "SCSS", "Figma"],
-    description: "Quizz game in ReactJS.\nHooks, Context, public APIs.",
   },
   {
     name: "PicStore",
@@ -42,7 +44,7 @@ const projects = [
     repo: "https://github.com/lucasmmaidana/Tienda-Split",
     demo: "https://tienda-split.vercel.app/",
     stack: ["HTML", "SCSS", "JavaScript"],
-    description: "Ecommerce integrated with WhatsApp",
+    description: "Ecommerce with WhatsApp integration.",
   },
   {
     name: "SIMGRAF-IO",
@@ -51,7 +53,7 @@ const projects = [
     repo: "https://github.com/lucasmmaidana/SIMGRAF-IO-Simplex/",
     demo: "https://simplex-calc.netlify.app/",
     stack: ["HTML", "CSS", "JavaScript"],
-    description: "Simplex method calculator",
+    description: "Linear programming Simplex method calculator.",
   },
   {
     name: "Tasks Dashboard",
@@ -60,7 +62,7 @@ const projects = [
     repo: "https://github.com/lucasmmaidana/kids-dahsboard",
     demo: "https://kids-dashboard.netlify.app/",
     stack: ["HTML", "CSS", "JavaScript"],
-    description: "App dashboard UI",
+    description: "Tasks App dashboard UI",
   },
   {
     name: "Skinland E-Commerce",
@@ -70,7 +72,8 @@ const projects = [
     demo:
       "https://www.notion.so/lucasmaidana/Skinland-E-Commerce-68df06ac32a34ffcba0d6ed0de460d41",
     stack: ["WordPress", "PHP", "CSS"],
-    description: "",
+    description:
+      "WooCommerce site with custom theme and Mercado Pago integration.",
   },
   {
     name: "New client form",
@@ -80,7 +83,7 @@ const projects = [
     demo: "https://codepen.io/LucasMaidana/pen/PazqaV",
     stack: ["HTML", "CSS", "JavaScript"],
     description:
-      "UI for a gym's management system. Browser input validation. Microinteractions",
+      "UI for a gym's management system.\nBrowser input validation. Microinteractions",
   },
 
   {
