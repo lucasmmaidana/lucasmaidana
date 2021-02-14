@@ -304,6 +304,17 @@ section h2 {
   box-shadow: 0 5px 3px var(--gray-100), 0 15px 15px var(--gray-100);
   padding-bottom: 4em;
 }
+.contact-links {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+}
+.contact-links div {
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+}
 
 #contact h3 {
   font-size: 1.6em;
@@ -316,7 +327,7 @@ section h2 {
   margin-left: 0.4em;
   vertical-align: middle;
 }
-#contact .email {
+#contact a {
   background-color: var(--teal-100);
   color: var(--teal-800);
   padding: 0.8em 1.3em;
@@ -325,14 +336,14 @@ section h2 {
   align-items: center;
   font-weight: 600;
   width: fit-content;
-  margin: 0 auto;
+  margin: 1rem;
   font-size: 1.2em;
   overflow-wrap: anywhere;
 }
-#contact .email:hover {
+#contact a:hover {
   opacity: 0.8;
 }
-#contact .email svg {
+#contact a svg {
   width: 1.3em;
   height: 1.3em;
 
