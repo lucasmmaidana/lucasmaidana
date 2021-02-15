@@ -68,10 +68,13 @@ a {
   max-width: 900px;
   margin: 0 auto;
   padding: 2em 1.5em;
+  position: relative;
 }
 
 section h2 {
-  font-size: 1.8em;
+  font-size: 2em;
+  margin-top: 0;
+  font-weight: 600;
   color: var(--gray-700);
 }
 
@@ -161,11 +164,26 @@ section h2 {
 .hero-text {
   font-size: 1.5em;
   max-width: 20em;
+  position: relative;
+}
+.hero .section-content::before {
+  content: "";
+  display: block;
+  background-image: url("/img/Puntitos.svg");
+  width: 13em;
+  height: 21em;
+  background-repeat: no-repeat;
+  background-size: 13em auto;
+  position: absolute;
+  bottom: -10.5em;
+  left: -16em;
+  opacity: 0.4;
 }
 
 .hero h1 {
   font-size: 2em;
   margin: 0;
+  font-weight: 600;
 }
 
 .hero-text p {
@@ -302,7 +320,6 @@ section h2 {
   border-radius: 40px;
   width: 100%;
   box-shadow: 0 5px 3px var(--gray-100), 0 15px 15px var(--gray-100);
-  padding-bottom: 4em;
 }
 .contact-links {
   text-align: center;
