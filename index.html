@@ -53,6 +53,7 @@
             <a
               title="Visit my blog in spanish"
               href="https://sinlevantar.blogspot.com"
+              onclick="trackOutboundLink('https://sinlevantar.blogspot.com'); return false;"
               >Blog</a
             >
           </li>
@@ -92,6 +93,7 @@
             <a
               title="View my LikedIn profile"
               href="https://www.linkedin.com/in/lucasmaidana/"
+              onclick="trackOutboundLink('https://www.linkedin.com/in/lucasmaidana/'); return false;"
             >
               <svg
                 aria-hidden="true"
@@ -109,7 +111,11 @@
                 ></path>
               </svg>
             </a>
-            <a title="Check my GitHub" href="https://github.com/lucasmmaidana">
+            <a
+              title="Check my GitHub"
+              href="https://github.com/lucasmmaidana"
+              onclick="trackOutboundLink('https://github.com/lucasmmaidana'); return false;"
+            >
               <svg
                 preserveAspectRatio="none"
                 viewBox="0 0 16 16"
@@ -126,6 +132,7 @@
             <a
               title="Check my CodePen profile"
               href="https://codepen.io/LucasMaidana"
+              onclick="trackOutboundLink('https://codepen.io/LucasMaidana'); return false;"
             >
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                 <path
@@ -183,7 +190,11 @@
           </svg>
         </h3>
         <div class="contact-links">
-          <a class="email" href="mailto:lucasmaidanasoy@gmail.com">
+          <a
+            class="email"
+            href="mailto:lucasmaidanasoy@gmail.com"
+            onclick="trackOutboundLink('mailto:lucasmaidanasoy@gmail.com'); return false;"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
@@ -199,7 +210,10 @@
             lucasmaidanasoy@gmail.com
           </a>
           <div>
-            <a href="/Lucas Maidana CV.pdf">
+            <a
+              href="/Lucas Maidana CV.pdf"
+              onclick="trackOutboundLink('/Lucas Maidana CV.pdf'); return false;"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
@@ -213,7 +227,10 @@
               </svg>
               CV (Spanish)
             </a>
-            <a href="/Lucas Martin Maidana Resume.pdf">
+            <a
+              href="/Lucas Martin Maidana Resume.pdf"
+              onclick="trackOutboundLink('/Lucas Martin Maidana Resume.pdf'); return false;"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
@@ -241,5 +258,23 @@
     </footer>
 
     <script type="module" src="index.js"></script>
+    <script>
+      /**
+       * Función que realiza un seguimiento de un clic en un enlace saliente en Analytics.
+       * Esta función toma una cadena de URL válida como argumento y la utiliza
+       * como la etiqueta del evento. Configurar el método de transporte como "beacon" permite que el hit se envíe
+       * con "navigator.sendBeacon" en el navegador que lo admita.
+       */
+      var trackOutboundLink = function (url) {
+        gtag("event", "clic", {
+          event_category: "saliente",
+          event_label: url,
+          transport_type: "beacon",
+          event_callback: function () {
+            document.location = url
+          },
+        })
+      }
+    </script>
   </body>
 </html>
