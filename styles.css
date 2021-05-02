@@ -332,6 +332,7 @@ section h2 {
 /* TALKS */
 .talk__header {
   display: flex;
+  flex-wrap: wrap;
   align-items: baseline;
   gap: 0.5em;
   margin-bottom: 0.2em;
