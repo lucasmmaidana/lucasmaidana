@@ -90,6 +90,21 @@ section h2 {
   overflow-x: auto;
 }
 
+.site-header:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 6em;
+  width: 1.5em;
+  background-image: linear-gradient(
+    90deg,
+    rgba(19, 78, 74, 0),
+    var(--teal-900)
+  );
+}
+
 .site-header nav {
   width: fit-content;
   margin: 0 auto;
@@ -328,6 +343,7 @@ section h2 {
   cursor: pointer;
   margin: 0 auto;
   display: block;
+  width: auto;
 }
 
 #loadMoreProjects:hover {
