@@ -2,15 +2,20 @@ import projects from "./projects.js"
 
 const projectsDiv = document.getElementById("projects-list")
 
-let html = ""
+const loadMoreButton = document.getElementById("loadMoreProjects")
 
-projects.forEach((project) => {
-  let stack = ""
-  project.stack.forEach((tech) => {
-    stack += `<span>${tech}</span> `
-  })
+let projectsToShow = projects.slice(0, 4)
 
-  html += `
+function loadProjects() {
+  let html = ""
+
+  projectsToShow.forEach((project) => {
+    let stack = ""
+    project.stack.forEach((tech) => {
+      stack += `<span>${tech}</span> `
+    })
+
+    html += `
         <div class="project">        
           <div>
             <div class="project__img">
@@ -35,6 +40,15 @@ projects.forEach((project) => {
           </div>
         </div>
     `
-})
+  })
 
-projectsDiv.innerHTML = html
+  projectsDiv.innerHTML = html
+}
+
+loadProjects()
+
+loadMoreButton.addEventListener("click", () => {
+  projectsToShow = projects
+  loadProjects()
+  loadMoreButton.style = "display:none"
+})

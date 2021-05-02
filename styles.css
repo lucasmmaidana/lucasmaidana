@@ -59,6 +59,12 @@ img {
 
 a {
   text-decoration: none;
+  color: var(--cyan-800);
+  font-weight: 600;
+}
+
+a:hover {
+  color: var(--cyan-700);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -67,7 +73,7 @@ a {
 .section-content {
   max-width: 900px;
   margin: 0 auto;
-  padding: 2em 1.5em;
+  padding: 3em 1.5em;
   position: relative;
 }
 
@@ -290,7 +296,10 @@ section h2 {
   gap: 1em;
 }
 
-.project__links a {
+.project__links a,
+#loadMoreProjects {
+  font-size: 1em;
+  font-family: inherit;
   width: 50%;
   text-align: center;
   background-color: var(--gray-100);
@@ -309,10 +318,34 @@ section h2 {
   box-shadow: 10px 10px 0 var(--gray-300);
 }
 
+#loadMoreProjects {
+  border: 0;
+  cursor: pointer;
+  margin: 0 auto;
+  display: block;
+}
+
+#loadMoreProjects:hover {
+  background-color: var(--cyan-100);
+}
+
+/* TALKS */
+.talk__header {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5em;
+  margin-bottom: 0.2em;
+}
+
+.talk__header > * {
+  margin: 0;
+}
+
 #contact {
   display: flex;
   align-items: center;
   min-height: 50vh;
+  margin-top: 5em;
 }
 #contact .section-content {
   text-align: center;
