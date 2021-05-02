@@ -16,7 +16,7 @@ function loadProjects() {
     })
 
     html += `
-        <div class="project">        
+        <article class="project">        
           <div>
             <div class="project__img">
              <a href="${project.demo && project.demo}">
@@ -38,7 +38,7 @@ function loadProjects() {
               ${project.demo ? `<a href="${project.demo}">Demo</a>` : ""}
               ${project.repo ? `<a href="${project.repo}">Code</a>` : ""}
           </div>
-        </div>
+        </article>
     `
   })
 
