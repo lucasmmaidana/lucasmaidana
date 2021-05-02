@@ -87,6 +87,12 @@ section h2 {
 .site-header {
   background-color: var(--teal-900);
   width: 100%;
+  overflow-x: auto;
+}
+
+.site-header nav {
+  width: fit-content;
+  margin: 0 auto;
 }
 
 .site-header ul {
@@ -97,7 +103,6 @@ section h2 {
   align-items: center;
   display: flex;
   justify-content: center;
-  flex-flow: wrap;
 }
 
 .site-header li {
