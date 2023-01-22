@@ -1,7 +1,7 @@
 const projects = [
   {
     name: "Greenbox",
-    img: "./img/greenbox.png",
+    img: "https://cdn.sanity.io/images/boc3ustf/production/2bbd267fe11faa53db818b677c0d5e8f02336d0d-2742x1628.png?w=400",
 
     demo: "https://greenbox-v3.netlify.app/",
     stack: ["GSAP", "JavaScript", "Sass"],
@@ -10,26 +10,24 @@ const projects = [
 
   {
     name: "Nextbnb",
-    img: "./img/nextbnb.png",
+    img: "https://cdn.sanity.io/images/boc3ustf/production/f0b92e2037b06a0caf4b4dd921cb9780e8acec14-1650x1108.png?w=400",
     repo: "https://github.com/lucasmmaidana/nextbnb",
     demo: "https://nextbnb-pi.vercel.app/",
     stack: ["Next.js", "MongoDB", "Sass"],
-    description:
-      "Listing of properties from a MongoDB Atlas example database in a static generated site.",
+    description: "Listing of properties from a MongoDB Atlas example database in a static generated site.",
   },
 
   {
     name: "Guess the song",
-    img: "https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F45721836-cd86-4f38-9310-a2f4de8f1248%2Fbehance_cover_Taylor_swift_guess_the_song.png?table=block&id=5470237a-0e48-4b53-8d08-c7e1caaaacf4&width=3490&userId=4bb9f704-7013-46e4-a417-bae0aa696d45&cache=v2",
+    img: "https://cdn.sanity.io/images/boc3ustf/production/718172f542a9427772a0afd10b9f3be523b90f57-1920x1080.png?w=400",
     repo: "https://github.com/lucasmmaidana/taylor-guess-the-song",
     demo: "https://guessthesongtaylorswift.netlify.app/",
     stack: ["React", "SCSS", "Figma"],
-    description:
-      "Quizz game in ReactJS.\nHooks, Context, public APIs and CSS animations.\nDesign and prototyping in Figma.",
+    description: "Quizz game in ReactJS.\nHooks, Context, public APIs and CSS animations.\nDesign and prototyping in Figma.",
   },
   {
     name: "Supermarket list",
-    img: "./img/tradehelm-challenge.png",
+    img: "https://cdn.sanity.io/images/boc3ustf/production/689d06e0a6f8595031bc446567336152b610832f-1682x928.png?w=400",
     repo: "https://github.com/lucasmmaidana/tradehelm-challenge",
     demo: "https://tradehelm-challenge-zeta.vercel.app/",
     stack: ["React", "TypeScript", "CSS modules"],
@@ -41,8 +39,7 @@ const projects = [
     repo: "https://github.com/lucasmmaidana/picstore-react-app",
     demo: "https://picstore.netlify.app/",
     stack: ["React", "CSS"],
-    description:
-      "React app from the 'Advance React' Scrimba.com course.\n Context, Hooks, Router, PropTypes, Custom Hooks.",
+    description: "React app from the 'Advance React' Scrimba.com course.\n Context, Hooks, Router, PropTypes, Custom Hooks.",
   },
   {
     name: "Tienda Split",
@@ -74,8 +71,7 @@ const projects = [
     repo: null,
     demo: "https://www.notion.so/lucasmaidana/Skinland-E-Commerce-68df06ac32a34ffcba0d6ed0de460d41",
     stack: ["WordPress", "PHP", "CSS"],
-    description:
-      "WooCommerce site with custom theme and Mercado Pago integration.",
+    description: "WooCommerce site with custom theme and Mercado Pago integration.",
   },
   {
     name: "New client form",
@@ -83,8 +79,7 @@ const projects = [
     repo: "https://codepen.io/LucasMaidana/pen/PazqaV",
     demo: "https://codepen.io/LucasMaidana/pen/PazqaV",
     stack: ["HTML", "CSS", "JavaScript"],
-    description:
-      "UI for a gym's management system.\nBrowser input validation. Microinteractions",
+    description: "UI for a gym's management system.\nBrowser input validation. Microinteractions",
   },
 
   {
